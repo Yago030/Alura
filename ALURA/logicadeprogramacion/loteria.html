@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<h1>PROGRAMA   FIFA</h1>
+<h2>mUNDIALES</h2>
+
+
+
+
+<script>
+
+function saltarLinea(){
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<hr>");
+};
+function imprimir(frase){
+ 
+    document.write(" <big>"+frase+"</big>");
+    saltarLinea();
+};
+
+var anhoMundial =1930;
+var limite=parseInt(prompt("ingrese el año limite para calcular: "));
+
+while(anhoMundial<=limite){
+imprimir("HUbo mundial de la FIFA en el año " + anhoMundial);
+anhoMundial =anhoMundial +4;
+};
+
+
+
+alert("FIN");
+
+</script>

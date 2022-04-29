@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+
+<h1>HEROES  ARRAYS</h1>
+
+<script>
+
+function imprimir (frase){
+
+    document.write(frase);
+    document.write("<br>");
+    document.write("<hr>");
+}
+
+var heroes =[];
+heroes.push(3);
+heroes.push(5);
+heroes.push(7);
+heroes.push(9);
+var input=document.querySelector("input");
+input.focus();
+function verificar(){
+var encontrado=false;
+for (var posicion=0; posicion<heroes.length; posicion++){
+if(Input.value==heroes[posicion]){
+    alert("usted acepto");
+    encontrado = true;
+    break;
+}
+
+}
+if (encontrado==false){
+    alert("Usted erro");
+}
+}
+
+input.value="";
+input.focus();
+
+</script>

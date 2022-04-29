@@ -1,0 +1,28 @@
+<canvas width="600" height="400"></canvas>
+
+
+<script>
+
+    function dibujarCuadrado(x,y,color){
+        var pantalla = document.querySelector("canvas"); // reutilizamos la etiqueta canvas
+var pincel = pantalla.getContext("2d"); //le pedimos que nos mande todo de la variable pantalla
+pincel.fillStyle=color; // son ambos cuadrados con coordenadas, 
+pincel.fillRect(x,y,50,50); // posiciionamos en coordenadas
+pincel.strokeStyle="black";
+pincel.strokeRect(x,y,50,50);
+    }
+
+  
+    
+
+    dibujarCuadrado(0,0,"yellow");
+    dibujarCuadrado(0,50,"green");
+    dibujarCuadrado(0,100,"red");
+    dibujarCuadrado(100,0,"yellow");
+    dibujarCuadrado(100,50,"green");
+    dibujarCuadrado(100,100,"red");
+
+
+
+
+</script>

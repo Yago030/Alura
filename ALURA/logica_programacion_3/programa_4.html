@@ -1,0 +1,60 @@
+<canvas width="600" height="400">
+
+
+</canvas>
+
+
+
+
+
+<script>
+var pantalla=document.querySelector("canvas");
+var pincel=pantalla.getContext("2d");
+
+pincel.fillStyle="grey";
+pincel.fillRect(0,0,600,400);
+
+
+
+function disenarCircunferencia(x,y,radio, color){
+pincel.fillStyle=color;
+pincel.beginPath(); //avisamos que vamos a dibujar
+pincel.arc(x,y,radio,0,2*Math.PI);//donde la empezamos a draw
+pincel.fill(); //llenamos la figura
+}
+
+function limpiarPantalla(){
+
+    pincel.clearRect(0,0,600,400);
+};
+
+
+function disenarObjetivo(x,y){
+    disenarCircunferencia(100,radio+20,"red")//
+disenarCircunferencia(100,100,radio+10,"white")//
+disenarCircunferencia(100,100,radop,"red")//
+
+}
+
+function sortearPosicion(maximo){
+
+return Math.floor(Math.random()*maximo);
+}
+
+
+var x=0;
+function actualizarPantalla(){
+
+limpiarPantalla();
+
+xAleatorio=sortearPosicion(600);
+yAleatorio=sortearPosicion(400);
+
+disenarObjetivo(xAleatorio,yAleatorio);
+x++;
+};
+
+
+
+setInterval(actualizarPantalla,20);
+</script>

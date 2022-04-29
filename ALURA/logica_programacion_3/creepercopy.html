@@ -1,0 +1,41 @@
+
+
+
+<canvas width="350" height="300" > <!--creamos el telon y damos tamaño-->
+
+</canvas>
+
+<script>
+document.write("<h1>HOOLAAA</H1>");
+    var pantalla= document.querySelector("canvas"); //creamos el telon
+    var pincel = pantalla.getContext("2d"); //traemos el telon
+
+    pincel.fillStyle="darkgreen"; //dibuamos la figura
+    pincel.fillRect(00,0,600,400);//empieza, termina, desde a donde
+
+
+    pincel.fillStyle="black";
+    pincel.fillRect(50,50,90,90)
+//primer 50 mueve a la derecha -iz a derecha
+//segundo 50 hacia abajo, de top a down
+//primer noventa el ancho
+//segundo 90 el alto
+    pincel.fillStyle="black";
+    pincel.fillRect(210,50,90,90)
+
+    pincel.fillStyle="black";
+    pincel.fillRect(140,135,70,100)
+
+
+    
+    pincel.fillStyle="black";
+    pincel.fillRect(100,200,40,110)
+
+      
+    pincel.fillStyle="black";
+    pincel.fillRect(210,200,40,110)
+
+    pincel.fillStyle="blue";
+ 
+
+</script>
